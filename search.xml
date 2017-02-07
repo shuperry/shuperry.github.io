@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[如何更新并自动同步 Linux 时间]]></title>
+      <url>%2F2017%2F02%2F07%2FHow-To-Update-Linux-Time%2F</url>
+      <content type="text"><![CDATA[很多人经常会发现 Linux 的时间不知道什么时候就不对了，如果刚好是作为某个业务系统的后台或数据库服务器的话就会引来一系列的麻烦，系统里很多数据的时间不对了，对排错和处理数据也会带来相当的工作量，这篇文章主要是讲解如何更新并自动同步 Linux 的时间。 只更新一次时间： 安装 ntp 工具1$ yum install ntp -y 同步一次服务器时间1$ ntpdate -u us.pool.ntp.org 自动同步时间: 设置定时同步时间任务，每 10 分钟执行一次1$ crontab -e 注: 在打开的窗口中输入 */10 * * * * /usr/sbin/ntpdate -u us.pool.ntp.org。 如果发现上一步操作中提示没有 crontab, 则请先执行此步骤安装 crontab 服务后再执行上一步操作1$ yum install -y vixie-cron 有些同学可能会问，时区的问题怎么处理？别急，下面附带时区相关操作。 查看服务器时区1$ date -R 注: 如果时区是 +0800 则表示为东八区，在国内的同学就不用去修改时区了。 修改服务器时区12$ rm -rf /etc/localtime$ ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 注: 以上操作是将当前时区修改为上海时区。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>%2F2017%2F02%2F07%2Fhello-world%2F</url>
       <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>

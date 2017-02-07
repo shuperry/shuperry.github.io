@@ -68,10 +68,12 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux,ntpdate," />
 
 
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="舒小胖的博客" type="application/atom+xml" />
@@ -86,12 +88,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="舒小胖的博客">
-<meta property="og:url" content="http://shuperry.github.io/archives/2017/index.html">
+<meta name="description" content="很多人经常会发现 Linux 的时间不知道什么时候就不对了，如果刚好是作为某个业务系统的后台或数据库服务器的话就会引来一系列的麻烦，系统里很多数据的时间不对了，对排错和处理数据也会带来相当的工作量，这篇文章主要是讲解如何更新并自动同步 Linux 的时间。
+只更新一次时间：
+安装 ntp 工具1$ yum install ntp -y
+同步一次服务器时间1$ ntpdate -u us.poo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何更新并自动同步 Linux 时间">
+<meta property="og:url" content="http://shuperry.github.io/2017/02/07/How-To-Update-Linux-Time/index.html">
 <meta property="og:site_name" content="舒小胖的博客">
+<meta property="og:description" content="很多人经常会发现 Linux 的时间不知道什么时候就不对了，如果刚好是作为某个业务系统的后台或数据库服务器的话就会引来一系列的麻烦，系统里很多数据的时间不对了，对排错和处理数据也会带来相当的工作量，这篇文章主要是讲解如何更新并自动同步 Linux 的时间。
+只更新一次时间：
+安装 ntp 工具1$ yum install ntp -y
+同步一次服务器时间1$ ntpdate -u us.poo">
+<meta property="og:updated_time" content="2017-02-07T07:45:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="舒小胖的博客">
+<meta name="twitter:title" content="如何更新并自动同步 Linux 时间">
+<meta name="twitter:description" content="很多人经常会发现 Linux 的时间不知道什么时候就不对了，如果刚好是作为某个业务系统的后台或数据库服务器的话就会引来一系列的麻烦，系统里很多数据的时间不对了，对排错和处理数据也会带来相当的工作量，这篇文章主要是讲解如何更新并自动同步 Linux 的时间。
+只更新一次时间：
+安装 ntp 工具1$ yum install ntp -y
+同步一次服务器时间1$ ntpdate -u us.poo">
 
 
 
@@ -109,7 +124,7 @@
   };
 </script>
 
-  <title> 归档 | 舒小胖的博客 </title>
+  <title> 如何更新并自动同步 Linux 时间 | 舒小胖的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -130,7 +145,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -231,103 +246,180 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 2 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/07/How-To-Update-Linux-Time/" itemprop="url">
-              
-                <span itemprop="name">如何更新并自动同步 Linux 时间</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-07T15:02:12+08:00"
-              content="2017-02-07" >
-          02-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/07/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-07T14:03:11+08:00"
-              content="2017-02-07" >
-          02-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何更新并自动同步 Linux 时间
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-02-07T15:02:12+08:00" content="2017-02-07">
+              2017-02-07
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/02/07/How-To-Update-Linux-Time/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/07/How-To-Update-Linux-Time/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>　　很多人经常会发现 Linux 的时间不知道什么时候就不对了，如果刚好是作为某个业务系统的后台或数据库服务器的话就会引来一系列的麻烦，系统里很多数据的时间不对了，对排错和处理数据也会带来相当的工作量，这篇文章主要是讲解如何更新并自动同步 Linux 的时间。</p>
+<h4 id="只更新一次时间："><a href="#只更新一次时间：" class="headerlink" title="只更新一次时间："></a>只更新一次时间：</h4><hr>
+<h5 id="安装-ntp-工具"><a href="#安装-ntp-工具" class="headerlink" title="安装 ntp 工具"></a>安装 ntp 工具</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yum install ntp -y</div></pre></td></tr></table></figure>
+<h5 id="同步一次服务器时间"><a href="#同步一次服务器时间" class="headerlink" title="同步一次服务器时间"></a>同步一次服务器时间</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ntpdate -u us.pool.ntp.org</div></pre></td></tr></table></figure>
+<h4 id="自动同步时间"><a href="#自动同步时间" class="headerlink" title="自动同步时间:"></a>自动同步时间:</h4><hr>
+<h5 id="设置定时同步时间任务，每-10-分钟执行一次"><a href="#设置定时同步时间任务，每-10-分钟执行一次" class="headerlink" title="设置定时同步时间任务，每 10 分钟执行一次"></a>设置定时同步时间任务，每 10 分钟执行一次</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ crontab <span class="_">-e</span></div></pre></td></tr></table></figure>
+<p><strong>注: 在打开的窗口中输入 <code>*/10 * * * * /usr/sbin/ntpdate -u us.pool.ntp.org</code>。</strong></p>
+<h5 id="如果发现上一步操作中提示没有-crontab-则请先执行此步骤安装-crontab-服务后再执行上一步操作"><a href="#如果发现上一步操作中提示没有-crontab-则请先执行此步骤安装-crontab-服务后再执行上一步操作" class="headerlink" title="如果发现上一步操作中提示没有 crontab, 则请先执行此步骤安装 crontab 服务后再执行上一步操作"></a>如果发现上一步操作中提示没有 <code>crontab</code>, 则请先执行此步骤安装 <code>crontab</code> 服务后再执行上一步操作</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yum  install -y vixie-cron</div></pre></td></tr></table></figure>
+<p>　　有些同学可能会问，时区的问题怎么处理？别急，下面附带时区相关操作。</p>
+<h5 id="查看服务器时区"><a href="#查看服务器时区" class="headerlink" title="查看服务器时区"></a>查看服务器时区</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ date -R</div></pre></td></tr></table></figure>
+<p><strong>注: 如果时区是 <code>+0800</code> 则表示为东八区，在国内的同学就不用去修改时区了。</strong></p>
+<h5 id="修改服务器时区"><a href="#修改服务器时区" class="headerlink" title="修改服务器时区"></a>修改服务器时区</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ rm -rf /etc/localtime</div><div class="line">$ ln <span class="_">-s</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</div></pre></td></tr></table></figure>
+<p><strong>注: 以上操作是将当前时区修改为上海时区。</strong></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag">#linux</a>
+          
+            <a href="/tags/ntpdate/" rel="tag">#ntpdate</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/07/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/02/07/How-To-Update-Linux-Time/"
+     data-title="如何更新并自动同步 Linux 时间"
+     data-content=""
+     data-url="http://shuperry.github.io/2017/02/07/How-To-Update-Linux-Time/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -335,6 +427,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/02/07/How-To-Update-Linux-Time/"
+           data-title="如何更新并自动同步 Linux 时间" data-url="http://shuperry.github.io/2017/02/07/How-To-Update-Linux-Time/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -354,8 +454,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -412,6 +521,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#只更新一次时间："><span class="nav-number">1.</span> <span class="nav-text">只更新一次时间：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装-ntp-工具"><span class="nav-number">1.1.</span> <span class="nav-text">安装 ntp 工具</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#同步一次服务器时间"><span class="nav-number">1.2.</span> <span class="nav-text">同步一次服务器时间</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动同步时间"><span class="nav-number">2.</span> <span class="nav-text">自动同步时间:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#设置定时同步时间任务，每-10-分钟执行一次"><span class="nav-number">2.1.</span> <span class="nav-text">设置定时同步时间任务，每 10 分钟执行一次</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#如果发现上一步操作中提示没有-crontab-则请先执行此步骤安装-crontab-服务后再执行上一步操作"><span class="nav-number">2.2.</span> <span class="nav-text">如果发现上一步操作中提示没有 crontab, 则请先执行此步骤安装 crontab 服务后再执行上一步操作</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#查看服务器时区"><span class="nav-number">2.3.</span> <span class="nav-text">查看服务器时区</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改服务器时区"><span class="nav-number">2.4.</span> <span class="nav-text">修改服务器时区</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -508,11 +628,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   

@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://shuperry.github.io/2017/02/07/How-To-Update-Linux-Time/</loc>
+    <lastmod>2017-02-07T07:45:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何更新并自动同步 Linux 时间</title>
+        <pubTime>2017-02-07T07:02:12.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>ntpdate</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="http://shuperry.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://shuperry.github.io/2017/02/07/hello-world/</loc>
     <lastmod>2017-02-07T06:34:27.000Z</lastmod>
     <data>
