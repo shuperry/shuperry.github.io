@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shuperry.github.io/"/>
-  <updated>2017-02-07T07:56:26.000Z</updated>
+  <updated>2017-02-07T09:53:55.000Z</updated>
   <id>http://shuperry.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://shuperry.github.io/2017/02/07/How-To-Update-Linux-Time/"/>
     <id>http://shuperry.github.io/2017/02/07/How-To-Update-Linux-Time/</id>
     <published>2017-02-07T07:02:12.000Z</published>
-    <updated>2017-02-07T07:56:26.000Z</updated>
+    <updated>2017-02-07T09:53:55.000Z</updated>
     
     <content type="html"><![CDATA[<p>　　很多人经常会发现 Linux 的时间不知道什么时候就不对了，如果刚好是作为某个业务系统的后台或数据库服务器的话就会引来一系列的麻烦，系统里很多数据的时间不对了，对排错和处理数据也会带来相当的工作量，这篇文章主要是讲解如何更新并自动同步 Linux 的时间。</p>
 <a id="more"></a>
@@ -31,7 +31,7 @@
 <h5 id="设置定时同步时间任务，每-10-分钟执行一次"><a href="#设置定时同步时间任务，每-10-分钟执行一次" class="headerlink" title="设置定时同步时间任务，每 10 分钟执行一次"></a>设置定时同步时间任务，每 10 分钟执行一次</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ crontab <span class="_">-e</span></div></pre></td></tr></table></figure>
 <p><strong>注: 在打开的窗口中输入 <code>*/10 * * * * /usr/sbin/ntpdate -u us.pool.ntp.org</code>。</strong></p>
 <h5 id="如果发现上一步操作中提示没有-crontab-则请先执行此步骤安装-crontab-服务后再执行上一步操作"><a href="#如果发现上一步操作中提示没有-crontab-则请先执行此步骤安装-crontab-服务后再执行上一步操作" class="headerlink" title="如果发现上一步操作中提示没有 crontab, 则请先执行此步骤安装 crontab 服务后再执行上一步操作"></a>如果发现上一步操作中提示没有 <code>crontab</code>, 则请先执行此步骤安装 <code>crontab</code> 服务后再执行上一步操作</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yum  install -y vixie-cron</div></pre></td></tr></table></figure>
-<p>　　有些同学可能会问，时区的问题怎么处理？别急，下面附带时区相关操作。</p>
+<p>有些同学可能会问，时区的问题怎么处理？别急，下面附带时区相关操作。</p>
 <h5 id="查看服务器时区"><a href="#查看服务器时区" class="headerlink" title="查看服务器时区"></a>查看服务器时区</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ date -R</div></pre></td></tr></table></figure>
 <p><strong>注: 如果时区是 <code>+0800</code> 则表示为东八区，在国内的同学就不用去修改时区了。</strong></p>
 <h5 id="修改服务器时区"><a href="#修改服务器时区" class="headerlink" title="修改服务器时区"></a>修改服务器时区</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ rm -rf /etc/localtime</div><div class="line">$ ln <span class="_">-s</span> /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</div></pre></td></tr></table></figure>
