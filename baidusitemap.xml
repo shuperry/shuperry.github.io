@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
   <url>
     <loc>http://shuperry.github.io/2017/02/07/How-To-Update-Linux-Time/</loc>
-    <lastmod>2019-03-15T06:06:37.453Z</lastmod>
-    <data>
-        <display>
-        <title>如何更新并自动同步 Linux 时间</title>
-        <pubTime>2017-02-07T07:02:12.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>ntpdate</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="http://shuperry.github.io/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    <lastmod>2019-03-15</lastmod>
+  </url>
 </urlset>
